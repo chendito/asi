@@ -8,21 +8,26 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="asi_all">
-    <h1 class="asi_title">Ace Search <span>Image</span></h1>
-    <form id="formulario" autocomplete="off">
-      <small></small>
-      <div class="asi_content">
-        <label class="asi_search">Término de búsqueda</label>
-        <input type="text" class="asi_input_search" spellcheck="false" placeholder="Comienza tu búsqueda" id="termino" />
-
-        <input type="submit" value="Buscar Imágenes" class="asi_btn">   
+  <div class="container">
+    <div class="asi_all">
+      <img src="./img/background.jpg" alt="Hero Background">
+      <div class="container_all">
+        <h1 class="asi_title">Ace Search <span>Image</span></h1>
+        <form id="formulario" autocomplete="off">
+          <small></small>
+          <div class="asi_content">
+            <label class="asi_search">Término de búsqueda</label>
+            <input type="text" class="asi_input_search" spellcheck="false" placeholder="Comienza tu búsqueda" id="termino" />
+    
+            <input type="submit" value="Buscar Imágenes" class="asi_btn">   
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
+  
+    <div id="results" class="asi_container"></div> <!-- Container -->
+    <div id="pages" class="asi_pages"></div> <!-- enum pages -->
   </div>
-
-  <div id="results" class="asi_container"></div> <!-- Container -->
-  <div id="pages" class="asi_pages"></div> <!-- enum pages -->
 
   <script src="js/asi.js"></script>
 </body>

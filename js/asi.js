@@ -17,7 +17,7 @@ function validateForm(e) {
   const termSearch = document.querySelector('#termino').value;
 
   if(termSearch === '') {
-    showMessage('Agrega un término de búsqueda');
+    showMessage('Agregue un término de búsqueda');
     return;
   } else {
     searchAPI();
